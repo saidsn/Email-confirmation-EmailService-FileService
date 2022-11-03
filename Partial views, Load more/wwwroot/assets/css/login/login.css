@@ -1,0 +1,547 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#top-area {
+  background-color: #333F98;
+}
+#top-area .container {
+  padding: 30px 0;
+}
+#top-area .my-btn {
+  width: 100px;
+  height: 45px;
+  padding-top: 10px;
+  background-color: #333F98;
+  border: none;
+}
+#top-area .flag-menu li img {
+  width: 26px;
+  height: 26px;
+}
+#top-area .image {
+  width: 100%;
+  position: relative;
+  justify-content: center;
+  display: flex;
+}
+#top-area .image img {
+  position: absolute;
+}
+#top-area .icons {
+  display: flex;
+  float: right;
+}
+#top-area .icons .btn-secondary {
+  background-color: #333F98 !important;
+  border: none !important;
+}
+#top-area .icons .bg-color {
+  background-color: #FF5722;
+}
+#top-area .icons div {
+  width: 45px;
+  height: 45px;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  cursor: pointer;
+  margin-right: 5px;
+  border-radius: 50%;
+}
+#top-area .icons div .sup {
+  width: 25px;
+  height: 25px;
+  font-size: 15px;
+  top: -25px;
+  right: -25px;
+  background-color: #FF5722;
+  border-radius: 50%;
+  color: white;
+}
+#top-area .icons div .sup sup {
+  margin-top: 10px;
+}
+#top-area .icons div img {
+  width: 45px;
+  height: 45px;
+  margin-top: -8px;
+  margin-left: -11px;
+  border-radius: 50%;
+  position: absolute;
+}
+#top-area .icons div a {
+  color: white;
+  font-size: 17px;
+  position: absolute;
+}
+#top-area .icons div .drop-info {
+  margin-left: -50px !important;
+  margin-top: -50px !important;
+  transition: 0.3s;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.7);
+}
+#top-area .icons div .drop-info .info {
+  border: none !important;
+  display: flex;
+  cursor: pointer;
+}
+#top-area .icons div .drop-info .info .dropdown-item {
+  background-color: white;
+}
+#top-area .icons div .drop-info .info i {
+  color: #000;
+  background-color: none !important;
+}
+#top-area .icons div .drop-info .info a {
+  margin-left: 60px;
+  color: #000;
+}
+
+#navbar-area {
+  background-color: #283593;
+}
+#navbar-area .container nav {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+#navbar-area .container nav .search {
+  width: 60px;
+  height: 60px;
+  background-color: #FF5722;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  cursor: pointer;
+  right: 0;
+  bottom: -30px;
+  z-index: 2;
+}
+#navbar-area .container nav .search i {
+  color: white;
+  font-size: 20px;
+}
+#navbar-area .container .btn {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+#navbar-area .container .btn .admin {
+  width: 125px;
+  background-color: #FF5722;
+  padding: 9px 0;
+}
+#navbar-area .container .btn li {
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+  margin-right: 25px;
+  z-index: 2;
+  padding: 0 10px;
+}
+#navbar-area .container .btn li .nav-a {
+  color: white;
+  display: block;
+  text-decoration: none;
+  position: relative;
+  margin-top: 15px;
+  padding-bottom: 10px;
+}
+#navbar-area .container .btn li .nav-a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: -10px;
+  left: 0px;
+  background-color: #FF5722;
+  transition: all 0.2s ease-in-out;
+  transform: scale(0, 0);
+  visibility: hidden;
+}
+#navbar-area .container .btn li:hover .home {
+  height: 120px;
+  z-index: 2;
+}
+#navbar-area .container .btn li:hover .submenu {
+  height: 160px;
+  z-index: 2;
+}
+#navbar-area .container .btn li:hover .categori {
+  height: 250px;
+  z-index: 2;
+}
+#navbar-area .container .btn li:hover a::before {
+  visibility: visible;
+  transform: scale(1, 1);
+}
+#navbar-area .container .btn li .home {
+  overflow: hidden;
+  position: absolute;
+  margin-top: 10px;
+  background-color: white;
+  height: 0;
+  width: 150px;
+  line-height: 40px;
+  transition: height 0.3s ease-in-out;
+  transition-delay: 0.1s;
+  text-align: left;
+  padding-left: 15px;
+  border-radius: 5px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.7);
+}
+#navbar-area .container .btn li .home a {
+  color: #000;
+  font-size: 16px;
+  text-decoration: none;
+}
+#navbar-area .container .btn li .submenu {
+  overflow: hidden;
+  position: absolute;
+  margin-top: 10px;
+  background-color: white;
+  height: 0;
+  width: 185px;
+  line-height: 40px;
+  transition: height 0.3s ease-in-out;
+  transition-delay: 0.1s;
+  text-align: left;
+  padding-left: 15px;
+  border-radius: 5px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.7);
+}
+#navbar-area .container .btn li .submenu a {
+  color: #000;
+  font-size: 16px;
+  text-decoration: none;
+}
+#navbar-area .container .btn li .categori {
+  overflow: hidden;
+  position: absolute;
+  margin-top: 10px;
+  background-color: white;
+  height: 0;
+  width: 800px;
+  line-height: 30px;
+  text-align: left;
+  transition: height 0.3s ease-in-out;
+  transition-delay: 0.2s;
+  text-align: left;
+  margin-left: -200px;
+  border-radius: 10px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.7);
+}
+#navbar-area .container .btn li .categori table td {
+  border: none;
+}
+#navbar-area .container .btn li .categori table th {
+  font-size: 17px;
+  color: blue;
+}
+#navbar-area .container .btn li .categori table th:hover {
+  color: #000;
+}
+#navbar-area .container .btn h1 {
+  text-align: center;
+  font-family: satisfy;
+  font-weight: 300;
+}
+
+#scroll-section {
+  background-color: #283593;
+  z-index: 2;
+  position: fixed;
+  width: 100%;
+  display: block;
+  transition: 0.5s;
+}
+#scroll-section .inActive {
+  display: none;
+}
+#scroll-section .head {
+  height: 60px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+#scroll-section .head img {
+  position: absolute;
+  color: white !important;
+}
+#scroll-section nav {
+  float: right;
+}
+#scroll-section .btn {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+#scroll-section .btn .admin {
+  background-color: #FF5722;
+  width: 125px;
+  height: 60px;
+  padding-top: 4px;
+  margin-right: 0;
+}
+#scroll-section .btn li {
+  display: inline-block;
+  transition: all 0.3s ease-in-out;
+  margin-right: 25px;
+}
+#scroll-section .btn li .nav-a {
+  color: white;
+  display: block;
+  text-decoration: none;
+  position: relative;
+  margin-top: 15px;
+  padding-bottom: 10px;
+}
+#scroll-section .btn li .nav-a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: -10px;
+  left: 0px;
+  background-color: #FF5722;
+  transition: all 0.2s ease-in-out;
+  transform: scale(0, 0);
+  visibility: hidden;
+}
+#scroll-section .btn li:hover .home {
+  height: 120px;
+}
+#scroll-section .btn li:hover .submenu {
+  height: 160px;
+}
+#scroll-section .btn li:hover .categori {
+  height: 250px;
+}
+#scroll-section .btn li:hover a::before {
+  visibility: visible;
+  transform: scale(1, 1);
+}
+#scroll-section .btn li .home {
+  overflow: hidden;
+  position: absolute;
+  margin-top: 10px;
+  background-color: white;
+  height: 0;
+  width: 150px;
+  line-height: 40px;
+  transition: height 0.3s ease-in-out;
+  transition-delay: 0.1s;
+  text-align: left;
+  padding-left: 15px;
+  border-radius: 5px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.7);
+}
+#scroll-section .btn li .home a {
+  color: #000;
+  font-size: 16px;
+  text-decoration: none;
+}
+#scroll-section .btn li .submenu {
+  overflow: hidden;
+  position: absolute;
+  margin-top: 10px;
+  background-color: white;
+  height: 0;
+  width: 165px;
+  line-height: 40px;
+  transition: height 0.3s ease-in-out;
+  transition-delay: 0.1s;
+  text-align: left;
+  padding-left: 15px;
+  border-radius: 5px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.7);
+}
+#scroll-section .btn li .submenu a {
+  color: #000;
+  font-size: 16px;
+  text-decoration: none;
+}
+#scroll-section .btn li .categori {
+  overflow: hidden;
+  position: absolute;
+  margin-top: 10px;
+  background-color: white;
+  height: 0;
+  width: 800px;
+  line-height: 30px;
+  text-align: left;
+  transition: height 0.3s ease-in-out;
+  transition-delay: 0.2s;
+  text-align: left;
+  margin-left: -220px;
+  border-radius: 10px;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.7);
+}
+#scroll-section .btn li .categori table td {
+  border: none;
+}
+#scroll-section .btn li .categori table th {
+  font-size: 17px;
+  color: blue;
+}
+#scroll-section .btn li .categori table th:hover {
+  color: #000;
+}
+#scroll-section .btn h1 {
+  text-align: center;
+  font-family: satisfy;
+  font-weight: 300;
+}
+
+#login {
+  padding-top: 80px;
+  padding-bottom: 50px;
+}
+#login .main {
+  width: 100%;
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+#login .main .image {
+  width: 50%;
+  height: 576px;
+  background-size: 543.75px 576px;
+  background-image: url(../../images/login/login-image.jpg);
+  background-repeat: no-repeat;
+  background-position-x: right;
+}
+#login .main .sign-in {
+  position: absolute;
+  padding-left: 50px;
+  padding-top: 40px;
+  width: 500px;
+  height: 379px;
+  margin-left: -50px;
+  position: relative;
+  border-radius: 5px;
+  background-color: white;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.7);
+}
+#login .main .sign-in h3 {
+  margin-bottom: 15px;
+}
+#login .main .sign-in .form {
+  display: flex;
+  align-items: baseline;
+}
+#login .main .sign-in .form-group {
+  position: relative;
+}
+#login .main .sign-in .form-group + .form-group {
+  margin-top: 30px;
+}
+#login .main .sign-in .form-label {
+  position: absolute;
+  text-align: center;
+  top: 10px;
+  color: grey;
+  transition: transform 150ms ease-out, font-size 150ms ease-out;
+  cursor: auto;
+}
+#login .main .sign-in .focused .form-label {
+  transform: translateY(-125%);
+  font-size: 0.75em;
+}
+#login .main .sign-in .form-group {
+  width: 100%;
+}
+#login .main .sign-in .form-input {
+  position: relative;
+  padding: 12px 0px 5px 0;
+  width: 90%;
+  outline: 0;
+  border: 0;
+  border-bottom: 1px solid grey;
+  background-color: transparent;
+  transition: box-shadow 150ms ease-out;
+  caret-color: white;
+  color: white;
+}
+#login .main .sign-in .form-input:focus {
+  box-shadow: 0 1px 0 0 blue;
+}
+#login .main .sign-in .input {
+  margin-right: 15px;
+  width: 17px;
+  height: 17px;
+  cursor: pointer;
+}
+#login .main .sign-in .input:hover {
+  padding: 15px;
+  color: rgb(215, 228, 250);
+}
+#login .main .sign-in label {
+  cursor: pointer;
+}
+#login .main .sign-in .password {
+  position: absolute;
+  right: 40px;
+}
+#login .main .sign-in a {
+  text-decoration: none;
+  transition: 0.3s;
+}
+#login .main .sign-in a:hover {
+  color: red;
+  transition: 0.3s;
+}
+#login .main .sign-in button {
+  width: 150px;
+  height: 45px;
+  margin: 20px 0;
+  border-radius: 3px;
+  border: none;
+  color: white;
+  background-color: #FF5722;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.4);
+}
+#login .main .sign-in button:hover {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.7);
+}
+
+#footer {
+  background-color: #000;
+  padding: 60px;
+  margin-top: 30px;
+}
+#footer h5 {
+  color: white;
+  margin-bottom: 30px;
+}
+#footer span {
+  color: white;
+}
+#footer p {
+  color: white;
+  transition: 0.3s;
+  cursor: pointer;
+  font-size: 17px;
+}
+#footer p:hover {
+  color: brown;
+}
+#footer .line {
+  width: 100%;
+  height: 1px;
+  background-color: white;
+  margin: 20px 0;
+}
+#footer .mastercards {
+  margin-bottom: 30px;
+}
+#footer .mastercards span {
+  float: right;
+}/*# sourceMappingURL=login.css.map */

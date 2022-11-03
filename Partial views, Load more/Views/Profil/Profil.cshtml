@@ -1,0 +1,81 @@
+﻿@model AppUser
+@{
+    ViewData["Title"] = "Profil";
+}
+
+<main>
+    <section id="profil">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="image d-flex">
+                        <img src="~/assets/images/profil/profil-image.jpg" alt="">
+                        <div class="image-info">
+                            <h4>Hi, John Doe</h4>
+                            <p>johndoe@deo.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-3">
+                            <div class="profil-info">
+                                <div class="icon">
+                                    <i class="fa-solid fa-clock-rotate-left"></i>
+                                    <span>Order History</span>
+                                </div>
+                                <div class="icon">
+                                    <i class="fa-solid fa-user"></i>
+                                    <span>Profile</span>
+                                </div>
+                                <div class="icon">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                    <span>Address</span>
+                                </div>
+                                <div class="icon">
+                                    <i class="fa-regular fa-credit-card"></i>
+                                    <span>Saved Cards</span>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-9">
+                            <div class="profil-information">
+                                <h3>Profile Infomation</h3>
+                                <div class="information">
+                                    <div class="info-name">
+                                        <p>Firs Name</p>
+                                        <p>Last name</p>
+                                        <p>Gender</p>
+                                        <p>Date Of Birth</p>
+                                        <p>Mobile Number</p>
+                                        <p>Location</p>
+                                        <p>E-mail ID</p>
+                                    </div>
+                                    <div class="info-value">
+                                        <p>@Model.FullName</p>
+                                        <p>s</p>
+                                        <p>Male</p>
+                                        <p>Jan,06,1979</p>
+                                        <p>+120 256 254 125</p>
+                                        <p>New York</p>
+                                        <p>@Model.Email</p>
+                                    </div>
+                                </div>
+                                <button>Edit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+</main>
+@section Scripts{
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.5/jquery.validate.min.js" integrity="sha512-rstIgDs0xPgmG6RX1Aba4KV5cWJbAMcvRCVmglpam9SoHZiUCyQVDdH2LPlxoHtrv17XWblE/V/PP+Tr04hbtA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/4.0.0/jquery.validate.unobtrusive.min.js" integrity="sha512-xq+Vm8jC94ynOikewaQXMEkJIOBp7iArs3IhFWSWdRT3Pq8wFz46p+ZDFAR7kHnSFf+zUv52B3prRYnbDRdgog==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="~/assets/css/profil/profil.css">
+}
+
